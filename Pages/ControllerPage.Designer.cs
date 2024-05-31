@@ -9,8 +9,15 @@
         }
         #region Component Designer generated code
         private void InitializeComponent() {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            SuspendLayout();
+            // 
+            // ControllerPage
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Name = "ControllerPage";
+            Size = new Size(816, 489);
+            ResumeLayout(false);
         }
         #endregion
     }
