@@ -8,4 +8,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controls\Custom\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PickToLight.Core\PickToLight.Core.csproj" />
+  </ItemGroup>
+
 </Project>
