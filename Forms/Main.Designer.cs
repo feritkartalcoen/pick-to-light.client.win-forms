@@ -1,98 +1,90 @@
 ﻿namespace PickToLight.Client.WinForms.Forms {
 	partial class Main {
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 		protected override void Dispose(bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose();
 			}
 			base.Dispose(disposing);
 		}
-
 		#region Windows Form Designer generated code
-
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
 		private void InitializeComponent() {
-			ButtonConnect = new System.Windows.Forms.Button();
-			ButtonDisconnect = new System.Windows.Forms.Button();
-			ButtonClear = new System.Windows.Forms.Button();
-			ButtonDisplay = new System.Windows.Forms.Button();
+			FlowLayoutPanelControllerControlButtons = new System.Windows.Forms.FlowLayoutPanel();
+			ButtonAddController = new System.Windows.Forms.Button();
+			ButtonRemoveController = new System.Windows.Forms.Button();
+			TabControlControllers = new System.Windows.Forms.TabControl();
+			FlowLayoutPanelControllerControlButtons.SuspendLayout();
 			SuspendLayout();
 			// 
-			// ButtonConnect
+			// FlowLayoutPanelControllerControlButtons
 			// 
-			ButtonConnect.AutoSize = true;
-			ButtonConnect.Location = new System.Drawing.Point(12, 12);
-			ButtonConnect.Name = "ButtonConnect";
-			ButtonConnect.Size = new System.Drawing.Size(75, 25);
-			ButtonConnect.TabIndex = 2;
-			ButtonConnect.Text = "Connect";
-			ButtonConnect.UseVisualStyleBackColor = true;
-			ButtonConnect.Click += ButtonConnect_Click;
+			FlowLayoutPanelControllerControlButtons.AutoSize = true;
+			FlowLayoutPanelControllerControlButtons.Controls.Add(ButtonAddController);
+			FlowLayoutPanelControllerControlButtons.Controls.Add(ButtonRemoveController);
+			FlowLayoutPanelControllerControlButtons.Dock = System.Windows.Forms.DockStyle.Top;
+			FlowLayoutPanelControllerControlButtons.Location = new System.Drawing.Point(0, 0);
+			FlowLayoutPanelControllerControlButtons.Margin = new System.Windows.Forms.Padding(0);
+			FlowLayoutPanelControllerControlButtons.Name = "FlowLayoutPanelControllerControlButtons";
+			FlowLayoutPanelControllerControlButtons.Size = new System.Drawing.Size(800, 25);
+			FlowLayoutPanelControllerControlButtons.TabIndex = 0;
 			// 
-			// ButtonDisconnect
+			// ButtonAddController
 			// 
-			ButtonDisconnect.AutoSize = true;
-			ButtonDisconnect.Location = new System.Drawing.Point(93, 12);
-			ButtonDisconnect.Name = "ButtonDisconnect";
-			ButtonDisconnect.Size = new System.Drawing.Size(76, 25);
-			ButtonDisconnect.TabIndex = 3;
-			ButtonDisconnect.Text = "Disconnect";
-			ButtonDisconnect.UseVisualStyleBackColor = true;
-			ButtonDisconnect.Click += ButtonDisconnect_Click;
+			ButtonAddController.AutoSize = true;
+			ButtonAddController.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			ButtonAddController.Location = new System.Drawing.Point(0, 0);
+			ButtonAddController.Margin = new System.Windows.Forms.Padding(0);
+			ButtonAddController.Name = "ButtonAddController";
+			ButtonAddController.Size = new System.Drawing.Size(95, 25);
+			ButtonAddController.TabIndex = 0;
+			ButtonAddController.Text = "Add Controller";
+			ButtonAddController.UseVisualStyleBackColor = true;
+			ButtonAddController.Click += ButtonAddController_Click;
 			// 
-			// ButtonClear
+			// ButtonRemoveController
 			// 
-			ButtonClear.AutoSize = true;
-			ButtonClear.Location = new System.Drawing.Point(93, 43);
-			ButtonClear.Name = "ButtonClear";
-			ButtonClear.Size = new System.Drawing.Size(76, 25);
-			ButtonClear.TabIndex = 5;
-			ButtonClear.Text = "Clear";
-			ButtonClear.UseVisualStyleBackColor = true;
-			ButtonClear.Click += ButtonClear_Click;
+			ButtonRemoveController.AutoSize = true;
+			ButtonRemoveController.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			ButtonRemoveController.Location = new System.Drawing.Point(95, 0);
+			ButtonRemoveController.Margin = new System.Windows.Forms.Padding(0);
+			ButtonRemoveController.Name = "ButtonRemoveController";
+			ButtonRemoveController.Size = new System.Drawing.Size(116, 25);
+			ButtonRemoveController.TabIndex = 1;
+			ButtonRemoveController.Text = "Remove Controller";
+			ButtonRemoveController.UseVisualStyleBackColor = true;
+			ButtonRemoveController.Click += ButtonRemoveController_Click;
 			// 
-			// ButtonDisplay
+			// TabControlControllers
 			// 
-			ButtonDisplay.AutoSize = true;
-			ButtonDisplay.Location = new System.Drawing.Point(12, 43);
-			ButtonDisplay.Name = "ButtonDisplay";
-			ButtonDisplay.Size = new System.Drawing.Size(75, 25);
-			ButtonDisplay.TabIndex = 4;
-			ButtonDisplay.Text = "Display";
-			ButtonDisplay.UseVisualStyleBackColor = true;
-			ButtonDisplay.Click += ButtonDisplay_Click;
+			TabControlControllers.Dock = System.Windows.Forms.DockStyle.Fill;
+			TabControlControllers.Location = new System.Drawing.Point(0, 25);
+			TabControlControllers.Margin = new System.Windows.Forms.Padding(0);
+			TabControlControllers.Name = "TabControlControllers";
+			TabControlControllers.Padding = new System.Drawing.Point(0, 0);
+			TabControlControllers.SelectedIndex = 0;
+			TabControlControllers.Size = new System.Drawing.Size(800, 425);
+			TabControlControllers.TabIndex = 1;
 			// 
 			// Main
 			// 
 			AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			ClientSize = new System.Drawing.Size(800, 450);
-			Controls.Add(ButtonClear);
-			Controls.Add(ButtonDisplay);
-			Controls.Add(ButtonDisconnect);
-			Controls.Add(ButtonConnect);
+			Controls.Add(TabControlControllers);
+			Controls.Add(FlowLayoutPanelControllerControlButtons);
 			Name = "Main";
+			ShowIcon = false;
+			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			Text = "Pick-to-Light";
+			FlowLayoutPanelControllerControlButtons.ResumeLayout(false);
+			FlowLayoutPanelControllerControlButtons.PerformLayout();
 			ResumeLayout(false);
 			PerformLayout();
 		}
-
 		#endregion
-
-		private System.Windows.Forms.Button ButtonConnect;
-		private System.Windows.Forms.Button ButtonDisconnect;
-		private System.Windows.Forms.Button ButtonClear;
-		private System.Windows.Forms.Button ButtonDisplay;
+		private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanelControllerControlButtons;
+		private System.Windows.Forms.Button ButtonAddController;
+		private System.Windows.Forms.Button ButtonRemoveController;
+		private System.Windows.Forms.TabControl TabControlControllers;
 	}
 }
