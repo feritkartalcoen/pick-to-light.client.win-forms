@@ -1,10 +1,39 @@
 ﻿namespace PickToLight.Client.WinForms.Forms {
 	public partial class MainForm {
 		#region Fields
+		private System.Windows.Forms.Button ButtonChangeAvailableDigitsForCounting;
+		private System.Windows.Forms.Button ButtonChangeBlinkingTimeInterval;
+		private System.Windows.Forms.Button ButtonChangeColor;
+		private System.Windows.Forms.Button ButtonChangeDigitsBrightness;
+		private System.Windows.Forms.Button ButtonChangeFlashingTimeInterval;
+		private System.Windows.Forms.Button ButtonChangeNodeAddress;
+		private System.Windows.Forms.Button ButtonChangePickTagConfigurationWithSpecialFunctionOne;
+		private System.Windows.Forms.Button ButtonChangePickTagConfigurationWithSpecialFunctionTwo;
+		private System.Windows.Forms.Button ButtonChangePickTagModeConfiguration;
+		private System.Windows.Forms.Button ButtonChangePollingRange;
+		private System.Windows.Forms.Button ButtonChangeValidDigitsForCounting;
 		private System.Windows.Forms.Button ButtonClear;
 		private System.Windows.Forms.Button ButtonConnect;
+		private System.Windows.Forms.Button ButtonDisableConfirmationButton;
+		private System.Windows.Forms.Button ButtonDisableShortageButton;
 		private System.Windows.Forms.Button ButtonDisconnect;
 		private System.Windows.Forms.Button ButtonDisplay;
+		private System.Windows.Forms.Button ButtonDisplayNodeAddress;
+		private System.Windows.Forms.Button ButtonEmulateConfirmationButtonPressing;
+		private System.Windows.Forms.Button ButtonEmulateShortageButtonPressing;
+		private System.Windows.Forms.Button ButtonEnableConfirmationButton;
+		private System.Windows.Forms.Button ButtonEnableShortageButton;
+		private System.Windows.Forms.Button ButtonFlash;
+		private System.Windows.Forms.Button ButtonRequestConnectedPickTags;
+		private System.Windows.Forms.Button ButtonRequestPickTagDetails;
+		private System.Windows.Forms.Button ButtonRequestPickTagModel;
+		private System.Windows.Forms.Button ButtonReset;
+		private System.Windows.Forms.Button ButtonSwitchToPickingMode;
+		private System.Windows.Forms.Button ButtonSwitchToStockMode;
+		private System.Windows.Forms.Button ButtonTurnBuzzerOff;
+		private System.Windows.Forms.Button ButtonTurnBuzzerOn;
+		private System.Windows.Forms.Button ButtonTurnLedOff;
+		private System.Windows.Forms.Button ButtonTurnLedOn;
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.DataGridView DataGridViewPickTags;
 		private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanelCommunicationControlBlockButtons;
@@ -553,35 +582,5 @@
 			PerformLayout();
 		}
 		#endregion
-
-		private System.Windows.Forms.Button ButtonChangeAvailableDigitsForCounting;
-		private System.Windows.Forms.Button ButtonChangeBlinkingTimeInterval;
-		private System.Windows.Forms.Button ButtonChangeColor;
-		private System.Windows.Forms.Button ButtonChangeDigitsBrightness;
-		private System.Windows.Forms.Button ButtonChangeFlashingTimeInterval;
-		private System.Windows.Forms.Button ButtonChangeNodeAddress;
-		private System.Windows.Forms.Button ButtonChangePickTagConfigurationWithSpecialFunctionOne;
-		private System.Windows.Forms.Button ButtonChangePickTagConfigurationWithSpecialFunctionTwo;
-		private System.Windows.Forms.Button ButtonChangePickTagModeConfiguration;
-		private System.Windows.Forms.Button ButtonChangePollingRange;
-		private System.Windows.Forms.Button ButtonChangeValidDigitsForCounting;
-		private System.Windows.Forms.Button ButtonDisableConfirmationButton;
-		private System.Windows.Forms.Button ButtonDisableShortageButton;
-		private System.Windows.Forms.Button ButtonDisplayNodeAddress;
-		private System.Windows.Forms.Button ButtonEmulateConfirmationButtonPressing;
-		private System.Windows.Forms.Button ButtonEmulateShortageButtonPressing;
-		private System.Windows.Forms.Button ButtonEnableConfirmationButton;
-		private System.Windows.Forms.Button ButtonEnableShortageButton;
-		private System.Windows.Forms.Button ButtonFlash;
-		private System.Windows.Forms.Button ButtonRequestConnectedPickTags;
-		private System.Windows.Forms.Button ButtonRequestPickTagDetails;
-		private System.Windows.Forms.Button ButtonRequestPickTagModel;
-		private System.Windows.Forms.Button ButtonReset;
-		private System.Windows.Forms.Button ButtonSwitchToPickingMode;
-		private System.Windows.Forms.Button ButtonSwitchToStockMode;
-		private System.Windows.Forms.Button ButtonTurnBuzzerOff;
-		private System.Windows.Forms.Button ButtonTurnBuzzerOn;
-		private System.Windows.Forms.Button ButtonTurnLedOff;
-		private System.Windows.Forms.Button ButtonTurnLedOn;
 	}
 }

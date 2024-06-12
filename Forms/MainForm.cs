@@ -1,8 +1,8 @@
 ﻿namespace PickToLight.Client.WinForms.Forms {
 	using PickToLight.Core.Models;
 	using PickToLight.Core.Models.Enums;
-	using System.Drawing;
 	using System;
+	using System.Drawing;
 	using System.Windows.Forms;
 	public partial class MainForm : Form {
 		#region Fields
@@ -28,32 +28,6 @@
 		}
 		#endregion
 		#region Methods
-		private void ButtonClear_Click(object sender, EventArgs e) {
-			_controller.Clear();
-		}
-		private void ButtonConnect_Click(object sender, EventArgs e) {
-			_controller.Connect();
-			if (_controller.IsConnected) {
-				ButtonConnect.Enabled = false;
-				ButtonDisconnect.Enabled = true;
-				FlowLayoutPanelCommunicationControlBlockButtons.Enabled = true;
-				DataGridViewPickTags.Enabled = true;
-			}
-		}
-		private void ButtonDisconnect_Click(object sender, EventArgs e) {
-			_controller.Disconnect();
-			if (!_controller.IsConnected) {
-				ButtonConnect.Enabled = true;
-				ButtonDisconnect.Enabled = false;
-				FlowLayoutPanelCommunicationControlBlockButtons.Enabled = false;
-				DataGridViewPickTags.Enabled = false;
-			}
-		}
-		private void ButtonDisplay_Click(object sender, EventArgs e) {
-			_controller.Display("01234", 1);
-			_controller.Display("56789", 2);
-		}
-		#endregion
 		private void ButtonChangeAvailableDigitsForCounting_Click(object sender, EventArgs e) {
 			_controller.ChangeAvailableDigitsForCounting(5);
 		}
@@ -88,7 +62,6 @@
 			_controller.ChangeFlashingTimeInterval(FlashingTimeInterval.TwoSeconds, 2);
 		}
 		private void ButtonChangeNodeAddress_Click(object sender, EventArgs e) {
-			//
 		}
 		private void ButtonChangePickTagConfigurationWithSpecialFunctionOne_Click(object sender, EventArgs e) {
 			_controller.ChangePickTagConfigurationWithSpecialFunctionOne(new() {
@@ -139,11 +112,36 @@
 				IsEighthValid = false,
 			}, 2);
 		}
+		private void ButtonClear_Click(object sender, EventArgs e) {
+			_controller.Clear();
+		}
+		private void ButtonConnect_Click(object sender, EventArgs e) {
+			_controller.Connect();
+			if (_controller.IsConnected) {
+				ButtonConnect.Enabled = false;
+				ButtonDisconnect.Enabled = true;
+				FlowLayoutPanelCommunicationControlBlockButtons.Enabled = true;
+				DataGridViewPickTags.Enabled = true;
+			}
+		}
 		private void ButtonDisableConfirmationButton_Click(object sender, EventArgs e) {
 			_controller.DisableConfirmationButton();
 		}
 		private void ButtonDisableShortageButton_Click(object sender, EventArgs e) {
 			_controller.DisableShortageButton();
+		}
+		private void ButtonDisconnect_Click(object sender, EventArgs e) {
+			_controller.Disconnect();
+			if (!_controller.IsConnected) {
+				ButtonConnect.Enabled = true;
+				ButtonDisconnect.Enabled = false;
+				FlowLayoutPanelCommunicationControlBlockButtons.Enabled = false;
+				DataGridViewPickTags.Enabled = false;
+			}
+		}
+		private void ButtonDisplay_Click(object sender, EventArgs e) {
+			_controller.Display("01234", 1);
+			_controller.Display("56789", 2);
 		}
 		private void ButtonDisplayNodeAddress_Click(object sender, EventArgs e) {
 			_controller.DisplayNodeAddress();
@@ -207,5 +205,6 @@
 				dataGridView.ColumnHeadersDefaultCellStyle.ForeColor = SystemColors.ControlText;
 			}
 		}
+		#endregion
 	}
 }
