@@ -1,12 +1,14 @@
-using PickToLight.Client.WinForms.Forms;
-using System;
-using System.Windows.Forms;
 namespace PickToLight.Client.WinForms {
+	using PickToLight.Client.WinForms.Forms;
+	using System;
+	using System.Windows.Forms;
 	internal static class Program {
+		#region Methods
 		[STAThread]
-		static void Main() {
+		public static void Main() {
 			ApplicationConfiguration.Initialize();
-			Application.Run(new Main());
+			Application.Run(new MainForm());
 		}
+		#endregion
 	}
 }

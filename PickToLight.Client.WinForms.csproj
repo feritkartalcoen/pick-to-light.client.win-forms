@@ -19,4 +19,9 @@
     <ProjectReference Include="..\PickToLight.Core\PickToLight.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+
 </Project>
