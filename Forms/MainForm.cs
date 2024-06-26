@@ -12,10 +12,10 @@
 		public MainForm() {
 			InitializeComponent();
 			_controller = new(
-				ipAddress: "192.168.1.11",
-				port: 4660,
+				ipAddress: "192.168.30.76",
+				port: 23,
 				controllerModel: ControllerModel.AT500Plus,
-				pickTagsCount: 2
+				pickTagsCount: 75
 			);
 			_controller.Update += () => {
 				DataGridViewPickTags.Invoke(() => {
@@ -140,8 +140,8 @@
 			}
 		}
 		private void ButtonDisplay_Click(object sender, EventArgs e) {
-			_controller.Display("01234", 1);
-			_controller.Display("56789", 2);
+			_controller.Display("01234", 1, dotsPosition: "010101");
+			_controller.Display("56789", 2, dotsPosition: "101010");
 		}
 		private void ButtonDisplayNodeAddress_Click(object sender, EventArgs e) {
 			_controller.DisplayNodeAddress();
